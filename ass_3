@@ -1,0 +1,22 @@
+'''
+   CISC-121 2022W
+   
+   Name:   John Duncan
+   Student Number: 20292993
+   Email:  john.duncan@queensu.ca
+
+   I confirm that this assignment solution is my own work and conforms to 
+   Queen's standards of Academic Integrity
+'''
+
+from numpy import genfromtxt
+
+def readInfo(file):
+    data = genfromtxt(file, delimiter=',', skip_header = 1)
+    return data
+
+
+def main():
+    data = readInfo('C:/Users/famou/Desktop/School/CISC 121/Assignments/Assignment 7/zoo_1.csv')
+
+main()
